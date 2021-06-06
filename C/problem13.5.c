@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 			write(1, "Couldn't find command.\n", 24);
 			exit(0);
 		}
-	    if(execlp(argv[2], argv[2], 0) != -1)
+	        if (execlp(argv[2], argv[2], 0) != -1)
 		{
 			execlp(argv[2], argv[2], 0);
 		}
