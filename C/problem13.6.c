@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 
 		if (status != 0)
 		{
-			if(execlp(argv[2], argv[2], 0) != -1)
+			if (execlp(argv[2], argv[2], 0) != -1)
 			{
 				execlp(argv[2], argv[2], 0);
 			}
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 	}
 	else
 	{
-		if(execlp(argv[1], argv[1], 0) != -1)
+		if (execlp(argv[1], argv[1], 0) != -1)
 		{
 			execlp(argv[1], argv[1], 0);
 		}
