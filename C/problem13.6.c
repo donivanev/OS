@@ -12,12 +12,12 @@ int main(int argc, char* argv[])
 	int status;
 	int pid = fork();
 
-	if(pid == -1)
+	if (pid == -1)
 	{
 		write(1, "Error while forking.\n", 22);
 		exit(-1);
 	}
-	else if(pid > 0)
+	else if (pid > 0)
 	{
 		pid_t childPid = wait(&status);
 
